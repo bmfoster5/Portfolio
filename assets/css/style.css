@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Times New Roman', arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+}
+
+header {
+    padding: 40px;
+    text-align: center;
+    background: #005035;
+    color: #fff;
+}
+header nav {
+    flex: 1 1 200px;
+    padding: 10px;
+    margin: 30px 40px 5px 40px;
+    text-align: center;
+    border-style: double;
+    border-width: 6px;
+    font-size: 25px;
+    background-color: #44F68C;
+}
+.linkBox {
+    display: flex;
+}
+.links {
+    display: inline-block;
+    margin-left: 25px;
+    flex: 2 1 200px;
+    justify-content: space-evenly;
+}
+a {
+    color: #005035;
+    text-decoration: none;
+}
+.profilePic {
+    height: 200px;
+    width: auto;
+    border: solid #44F68C 8px;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sideBar {
+    display: flex;
+    flex-basis: 25%;
+    background-color: #44F68C;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.content {
+    background-color: #fff;
+    flex-basis: 75%;
+}
+
+.contentBox {
+    display: flex;
+    margin: 10px;
+    background-color: #44F68C;
+    color: black;
+    border: 10px;
+    border-radius: 15px 50px 30px;
+    
+}
+.txtBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer {
+    width: 100%;
+    bottom: 0;
+    padding: 15px;
+    text-align: center;
+    background: #005035;
+    color: #fff;
+    margin-top: auto;
+  }
+
+@media screen and (max-width: 992px) {
+    .content {
+      width: 50%;
+    }
+    header {
+      background: yellow;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .content {
+      width: 100%;
+    }
+    header {
+      background: red;
+    }
+  }
