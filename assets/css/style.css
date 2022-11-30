@@ -83,6 +83,7 @@ main {
     width: 25%;
     height: auto;
 }
+
 .txtBox {
     display: flex;
     flex-direction: column;
